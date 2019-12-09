@@ -101,7 +101,6 @@ public class ImageController {
         if(image.getUser().getId() == user.getId()){
             return "images/edit";
         } else{
-
             return "redirect:/images/" +imageId+"/"+ image.getTitle();
         }
 
